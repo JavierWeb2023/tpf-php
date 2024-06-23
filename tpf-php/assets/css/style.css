@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #dddfe4;
+    width: 100%;
+}
+
+.navbar p {
+    color: #ffffff !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1rem;
+    border-bottom: 2px solid #242526;
+    margin-left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fc7910;
+    border-bottom: 2px solid #fc7910;
+}
+
+.btn {
+    background-color: #fc4d36;
+    color: #000000;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 15px 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #242526;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    width: 550px;
+    height: auto;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: auto;
+}
+
+.productos {
+    margin-top: 70px;
+}
+
+.productos p {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #242526;
+}
+
+.login {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    border-radius: 15px 15px 18px 18px;
+}
+
+.upimages {
+    width: 600px !important;
+    margin: 60px auto !important;
+}
+
+.login h1 {
+    text-align: center;
+    color: #242526;
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #fc4d36;
+}
+
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fc4d36;
+    color: #ffffff;
+    border-radius: 25px 0 0 25px;
+}
+
+.login form input[type="password"], .login form input[type="text"], .login form input[type="email"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #fc4d36;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border-radius: 0 25px 25px 0;
+}
+
+.input-group {
+    padding: 15px;
+}
+
+.login form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fc4d36;
+    border: 0;
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+.login form input[type="submit"]:hover {
+    background-color: #242526;
+    transition: background-color 0.5s;
+}
+
+.desc-foto {
+    font-size: 0.7rem !important;
+}
+
+.nuevo a {
+    text-decoration: none;
+    color: #fc4d36;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.nuevo a:hover {
+    color: #242526;
+    transition: background-color 0.5s;
+}
+
+.content {
+	width: 1000px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.content h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
+
+.content > p, .content > div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+    border-radius: 25px;
+}
+
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+
+.fondo-degrade {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #fc7910 0%, #fc4d36 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.espacio {
+    margin-top: 50px;
+}
+
+.divisor5 {
+    transform: rotate(180deg);
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+}
+
+.divisor5 svg {
+    height: 60px;
+    width: calc(150% + 1.3px);
+}
+
+.shape-fill {
+    fill: #dddfe4;
+}
+
+.footer {
+    background-color: #1b1b1b;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+}
