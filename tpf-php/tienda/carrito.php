@@ -69,7 +69,7 @@ $carrito = isset($_SESSION['carrito']) ? $_SESSION['carrito'] : array();
                                     $total += $subtotal;
                                 ?>
                                     <tr>
-                                        <td><img src="<?php echo $item['imagen']; ?>" alt="<?php echo $item['nombre']; ?>"></td>
+                                        <td><img class="imagen-carrito" src="<?php echo $item['imagen']; ?>" alt="<?php echo $item['nombre']; ?>"></td>
                                         <td><?php echo $item['nombre']; ?></td>
                                         <td>AR$ <?php echo $item['precio']; ?></td>
                                         <td><?php echo $item['cantidad']; ?></td>
@@ -78,12 +78,24 @@ $carrito = isset($_SESSION['carrito']) ? $_SESSION['carrito'] : array();
                                 <?php } ?>
                             </tbody>
                         </table>
-                        <p>Total: AR$ <?php echo $total; ?></p>
-                        <form method="post" action="borrar_carrito.php">
-                            <button type="submit" class="btn">VACIAR CARRITO</button>
-                        </form>
-                        <br>
-                        <a href="index.php"><button class="btn">SEGUIR COMPRANDO</button></a>
+                    <div class="row">
+                        <div class="col"><p>Total: AR$ <?php echo $total; ?></p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <form method="post" action="borrar_carrito.php">
+                                <button type="submit" class="btn">VACIAR CARRITO</button>
+                            </form>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn">INICIAR PAGO</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="index.php"><button class="btn">SEGUIR COMPRANDO</button></a>
+                        </div>
+                    </div>
                     <?php } ?>
                 </div>
             </div>
